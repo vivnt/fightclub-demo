@@ -1,1 +1,618 @@
 
+<!--
+  Copyright 2019 Google LLC
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!doctype html>
+<html amp lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+
+    <title>Azalea</title>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="Azalea description, characteristics and care tips.">
+    <meta name="application-name" content="Mulberry Farms">
+    <meta property="og:image" content="assets/template-product/azalea@2x.jpg">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="639">
+
+    <link rel="icon" type="image/png" href="assets/template-product/icon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600">
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.googleapis.com/",
+      "@type": "ARArtifact",
+      "arTarget": {
+        "@type": "ARImageTarget",
+        "name" : "Azalea",
+        "image": "https://lens-templates.firebaseapp.com/assets/template-product/azalea-sign@2x.jpg"
+      },
+      "arContent": {
+        "@type": "WebPage",
+        "name": "Azalea - Features, Care, and Planting",
+        "image": "https://lens-templates.firebaseapp.com/assets/template-product/azalea@2x.jpg",
+        "url": "https://lens-templates.firebaseapp.com/template-product.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Mulberry Farms",
+          "logo": "https://lens-templates.firebaseapp.com/assets/template-product/icon.png"
+        }
+      }
+    }
+    </script>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <style amp-custom>
+      /* General styling */
+      body {
+        color: #1F5253;
+        background-color: #E0E9E2;
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 1.3;
+        font-weight: 400;
+        font-size: 17px;
+      }
+      main {
+        padding: 0 20px;
+        position: relative;
+          z-index: 2;
+          background-color: #E0E9E2;
+          top: 63vw;
+      }
+      section {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 3px 1px rgba(0,0,0,.05);
+        padding: 20px;
+        margin: 0 auto 25px;
+        max-width: 550px;
+      }
+      section:first-child {
+        transform: translateY(-20px);
+        margin-bottom: 5px;
+      }
+      section > *:first-child {
+        padding-top: 0;
+        margin-top: 0;
+      }
+      section > *:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      h1 {
+        font-size: 42px;
+        font-family: 'Playfair Display', serif;
+        margin: 0 0 5px;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+      h2 {
+        margin: 0 0 20px;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.1;
+      }
+      h3 {
+        margin: 0 0 20px;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.1;
+      }
+      h4 {
+        margin: 0 0 20px;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.1;
+      }
+      h5 {
+        margin: 0 0 20px;
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.1;
+      }
+      h6 {
+        margin: 0 0 14px;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.1;
+      }
+      p {
+        margin: 0 0 20px;
+      }
+      a {
+        color: #1F5253;
+        text-decoration: underline;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      td {
+        border-bottom: 1px solid #E0E9E2;
+        width: 50%;
+        padding: 12px 0;
+      }
+      b, strong {
+        font-weight: 600;
+      }
+      .header {
+          position: fixed;
+          top: 0;
+          left: 50%;
+          max-width: 590px;
+          margin: 0 auto;
+          width: 100%;
+          z-index: 2;
+          transform: translateX(-50%);
+      }
+      .subhead {
+        border-bottom: 1px solid #E0E9E2;
+        padding-bottom: 10px;
+      }
+      .button,
+      input[type=submit] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0 40px;
+        height: 42px;
+        border: none;
+        color: #fff;
+        background-color: #D3835C;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: pointer;
+        border-radius: 21px;
+        -webkit-appearance: none;
+        text-decoration: none;
+      }
+      .align-center {
+        text-align: center;
+      }
+      .align-right {
+        text-align: right;
+      }
+      .color-orange {
+        color: #D3835C;
+      }
+      .plant-class {
+        margin-bottom: 5px;
+      }
+      .no-highlight {
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -webkit-tap-highlight-color: transparent;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+      }
+      .no-highlight:focus {
+        outline: none;
+      }
+
+      /* Tabs */
+      .tab-content > div {
+        display: none;
+      }
+      amp-selector [option][selected] {
+        outline: none;
+      }
+      amp-selector:focus {
+        outline: none;
+      }
+      amp-selector.tab-menu .underline {
+        position: absolute;
+        height: 3px;
+        width: 50%;
+        transform-origin: left;
+        bottom: 0;
+        left: 0;
+        transition: .4s transform ease-in-out;
+      }
+      amp-selector.tab-menu .underline:after {
+        height: 100%;
+        width: 100%;
+        background-color: #C66731;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        transform-origin: left;
+        transition: .4s transform ease-in-out;
+      }
+      amp-selector.tab-menu .underline {
+        transform: translateX(0);
+      }
+      amp-selector.tab-menu .underline:after {
+        transform: scaleX(.8);
+      }
+      amp-selector[selected="b"].tab-menu .underline {
+        transform: translateX(100%);
+      }
+      amp-selector[selected="b"].tab-menu .underline:after {
+        transform: scaleX(.9);
+      }
+      .tab-content > div[selected] {
+        display: block;
+      }
+      .tab-menu {
+        display: flex;
+        border-bottom: 1px solid #E0E9E2;
+        margin-bottom: 20px;
+      }
+      .tab-menu > div {
+        width: 100%;
+      }
+      .tab-menu h2 {
+        margin: 0;
+        padding: 0 0 10px;
+      }
+      .tab-menu > div[selected] h2 {
+        color: #C66731;
+      }
+
+      /* Carousel */
+      amp-carousel {
+        width: 100vw;
+        margin-left: -40px;
+      }
+      amp-carousel > div {
+        vertical-align: top;
+      }
+      .amp-scrollable-carousel-slide {
+        margin-left: 12px;
+      }
+      .amp-scrollable-carousel-slide:first-child {
+        margin-left: 40px;
+      }
+      .amp-scrollable-carousel-slide:last-child {
+        margin-right: 40px;
+      }
+      .amp-carousel-button {
+        display: none;
+      }
+      .box {
+        border-radius: 5px;
+        background-color: #F0F0ED;
+        width: 230px;
+        height: 260px;
+        overflow: hidden;
+        display: block;
+        text-decoration: none;
+        vertical-align: top;
+      }
+      .box .content {
+        padding: 15px;
+        box-sizing: border-box;
+        height: 110px;
+        overflow: hidden;
+        white-space: normal;
+        color: #1D604A;
+      }
+      .box .content p {
+        color: #84A69A;
+        margin-bottom: 0;
+      }
+      .box .content h3 {
+        margin-bottom: 10px;
+      }
+
+      /* Video */
+      .video-player {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      .play-icon {
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        top: 50%;
+        width: 60px;
+        height: 60px;
+        transform: translate(-50%, -50%);
+        background: url(assets/template-product/play-arrow.svg) no-repeat center center/100%;
+      }
+
+      /* Forms */
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        height: 42px;
+        box-sizing: border-box;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 14px;
+        -webkit-appearance: none;
+        background-color: #F0F0ED;
+        margin-bottom: 10px;
+        color: #1F5253;
+      }
+      textarea {
+        height: 75px;
+        resize: none;
+      }
+      ::-webkit-input-placeholder {
+        color: #84A69A;
+      }
+      ::-moz-placeholder {
+        color: #84A69A;
+        opacity: 1;
+      }
+      :-ms-input-placeholder {
+        color: #84A69A;
+      }
+      .form-message {
+        margin: 20px 0;
+      }
+      .form-message p {
+        margin: 0;
+      }
+
+      /* Comments */
+      #comments ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #comments li {
+        display: none;
+        border-top: 1px solid #cbe1c8;
+        margin-top: 25px;
+        padding-top: 25px;
+      }
+      #comments li:nth-child(1),
+      #comments li:nth-child(2),
+      #comments.show-all li {
+        display: flex;
+      }
+      #more-comments.hide {
+        display: none;
+      }
+      #comments .content p {
+        margin-bottom: 0;
+      }
+      #comments .content p.name {
+        margin-bottom: -5px;
+      }
+      #comments .avatar {
+        flex-shrink: 0;
+        margin-right: 15px;
+      }
+      .avatar-wrapper {
+        border-radius: 50%;
+        overflow: hidden;
+        height: 40px;
+        width: 40px;
+      }
+      #comments time {
+        color: #84A69A;
+        font-size: 12px;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      #more-comments {
+        margin-top: 20px;
+      }
+      #more-comments a {
+        text-decoration: none;
+      }
+      @media all and (min-width: 630px) {
+        main {
+            top: 375px;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <amp-img class="header" src="assets/template-product/azalea.jpg" srcset="assets/template-product/azalea@2x.jpg 2x" width="500" height="320" layout="responsive" alt="Pink Azalea flowers"></amp-img>
+
+    <main>
+
+      <section>
+        <p class="plant-class"><b>Outdoor Plan</b></p>
+        <h1>Azalea</h1>
+        <h3>Tri-Lights - Rhododendron</h3>
+        <p>Small tree or shrub featuring one bloom per stem during the spring blooming season. Azaleas should be planted just prior to blooming. The Tri-Lights variety features white blossoms with a pink hue and yellow center over medium-green foliage. They thrive in areas landscaped to provide daily variation between full sunlight and shade.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Height:</td>
+              <td><b>3-4'</b></td>
+            </tr>
+            <tr>
+              <td>Spread:</td>
+              <td><b>5-6'</b></td>
+            </tr>
+            <tr>
+              <td>Shape:</td>
+              <td><b>Upright, rounded</b></td>
+            </tr>
+            <tr>
+              <td>Growth rate:</td>
+              <td><b>Slow</b></td>
+            </tr>
+            <tr>
+              <td>Blooms:</td>
+              <td><b>May/June</b></td>
+            </tr>
+            <tr>
+              <td>Zone:</td>
+              <td><b>4 to 7</b></td>
+            </tr>
+            <tr>
+              <td>Care level:</td>
+              <td><b>4 (somewhat difficult)</b></td>
+            </tr>
+            <tr>
+              <td>Sun Light:</td>
+              <td><b>Full-Partial</b></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><b>Meaning</b><br>Azaleas symbolize femininity, softness, abundant beauty and intelligence, developing passion, elegance, and wealth.</p>
+      </section>
+
+      <section>
+        <amp-selector on="select:AMP.setState({selectedTab: event.targetOption})" [selected]="selectedTab" role="tablist" class="tab-menu">
+          <div class="no-highlight" role="tab" option="a" selected><h2>Care Tips</h2></div>
+          <div class="no-highlight" role="tab" option="b"><h2>Planting Tips</h2></div>
+          <div class="underline"></div>
+        </amp-selector>
+        <amp-selector on="select:AMP.setState({selectedTab: event.targetOption})" [selected]="selectedTab" role="tablist" class="tab-content">
+          <div role="tab" option="a" selected>
+            <p>Azaleas do best with abundant water with the foliage indicating insufficient quantities; azaleas not receiving enough water will have brown-looking foliage. Hard water can turn the leaves yellow so try to utilize rainwater as much as possible.</p>
+          </div>
+          <div role="tab" option="b">
+            <p>Intersperse azaleas with perennials such as ferns, hostas, wild ginger, or shrubs native to your area.</p>
+          </div>
+        </amp-selector>
+      </section>
+
+      <section>
+        <h2 class="subhead">Similar Plants</h2>
+        <amp-carousel height="260" layout="fixed-height" type="carousel">
+          <a href="" class="box">
+            <amp-img src="assets/template-product/endless-summer-hydrangea.jpg" srcset="assets/template-product/endless-summer-hydrangea@2x.jpg 2x" width="230" height="150" layout="responsive" alt="Blue Endless Summer Hydrangea flowers"></amp-img>
+            <div class="content">
+              <h3>Endless Summer Hydrangea</h3>
+              <p>Flower description</p>
+            </div>
+          </a>
+          <a href="" class="box">
+            <amp-img src="assets/template-product/rhododendron.jpg" srcset="assets/template-product/rhododendron@2x.jpg 2x" width="230" height="150" layout="responsive" alt="Purple Rhododendron flower"></amp-img>
+            <div class="content">
+              <h3>Rhododendron</h3>
+              <p>Flower description</p>
+            </div>
+          </a>
+        </amp-carousel>
+      </section>
+
+      <section>
+        <h2 class="align-center">We offer landscape design and installation.</h2>
+        <div class="video-player">
+          <amp-video id="video-tips" controls width="1280" height="720" layout="responsive" src="https://storage.googleapis.com/ampconf-76504.appspot.com/Bullfinch%20-%202797.mp4"></amp-video>
+          <div id="video-overlay" on="tap:video-overlay.hide, video-tips.play" tabindex="0" role="button">
+            <div class="play-icon"></div>
+            <amp-img class="poster-image" layout="fill" src="assets/template-product/video-placeholder.jpg"></amp-img>
+          </div>
+        </div>
+        <p class="align-center">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p class="align-center"><a href="" class="button">Contact Us</a></p>
+      </section>
+
+      <section>
+        <h3>Leave a comment</h3>
+        <form action-xhr="./comment/" method="post" target="_top">
+          <input type="text" name="full-name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="comment" placeholder="Message" required></textarea>
+          <div class="align-right">
+            <input type="submit" value="Submit">
+          </div>
+          <div submit-success class="form-message">
+            <template type="amp-mustache">
+              <p>Success! Thanks {{name}} for your comment. We'll review and post shortly.</p>
+              </template>
+          </div>
+        </form>
+        <div id="comments" [class]="commentsShow ? 'show-all' : 'show-some'" class="show-some">
+          <p>4 Comments</p>
+          <ul>
+            <li>
+              <div class="avatar">
+                <div class="avatar-wrapper">
+                  <amp-img src="assets/template-product/avatar-default.svg" width="40" height="40"></amp-img>
+                </div>
+              </div>
+              <div class="content">
+                <p class="name"><b>Morris Moreno</b></p>
+                <time datetime="">Yesterday at 12:35 p.m.</time>
+                <p class="comment">Most of the plants are locally grown!</p>
+              </div>
+            </li>
+            <li>
+              <div class="avatar">
+                <div class="avatar-wrapper">
+                  <amp-img src="assets/template-product/lillian.jpg" srcset="assets/template-product/lillian@2x.jpg 2x" width="40" height="40"></amp-img>
+                </div>
+              </div>
+              <div class="content">
+                <p class="name"><b>Lillian Ellis</b></p>
+                <time datetime="">May 7, 2018, at 2:33 p.m.</time><br>
+                <p class="comment">I love this place! Great customer service and plant selection. Super helpful. 😍</p>
+              </div>
+            </li>
+            <li>
+              <div class="avatar">
+                <div class="avatar-wrapper">
+                  <amp-img src="assets/template-product/avatar-default.svg" width="40" height="40"></amp-img>
+                </div>
+              </div>
+              <div class="content">
+                <p class="name"><b>Morris Moreno</b></p>
+                <time datetime="">Yesterday at 12:35 p.m.</time>
+                <p class="comment">Most of the plants are locally grown!</p>
+              </div>
+            </li>
+            <li>
+              <div class="avatar">
+                <div class="avatar-wrapper">
+                  <amp-img src="assets/template-product/lillian.jpg" srcset="assets/template-product/lillian@2x.jpg 2x" width="40" height="40"></amp-img>
+                </div>
+              </div>
+              <div class="content">
+                <p class="name"><b>Lillian Ellis</b></p>
+                <time datetime="">May 7, 2018, at 2:33 p.m.</time><br>
+                <p class="comment">I love this place! Great customer service and plant selection. Super helpful. 😍</p>
+              </div>
+            </li>
+          </ul>
+          <p id="more-comments" [class]="commentsShow ? 'hide' : 'show'" class="show"><a on="tap:AMP.setState({commentsShow: !commentsShow})" class="color-orange"><b>Show all 4 comments...</b></a></p>
+        </div>
+      </section>
+
+    </main>
+
+  </body>
+
+</html>
