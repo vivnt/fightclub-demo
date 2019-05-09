@@ -1,44 +1,4 @@
-<!doctype html>
-<!-- This tells everyone that this is an AMP file. `<html amp>` works too. -->
-<html ⚡>
-<!-- ## Head -->
-<!-- -->
-<head>
-  <!-- The charset definition must be the first child of the `<head>` tag. -->
-  <meta charset="utf-8">
-  <title> Hello World</title>
-  <!-- The AMP runtime must be loaded as the second child of the `<head>` tag.-->
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <!--
-    AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.
-  -->
-  <link rel="canonical" href="<% canonical %>">
-  <!--
-    AMP HTML files require a viewport declaration. It's recommended to include initial-scale=1.
-  -->
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <!--
-    CSS must be embedded inline.
-  -->
-  <style amp-custom>
-    <style amp-custom>
-  @font-face {
-    font-family: "Source Sans Pro";
-    src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
-  }
-
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-</style>
-    <style amp-custom>
-</style>
-  </style>
-  <!--
-    The AMP boilerplate.
-  -->
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  <script type="application/ld+json">
+<script type="application/ld+json">
   {
     "@context": "https://schema.googleapis.com/",
     "@type": "ARArtifact",
@@ -58,7 +18,7 @@
       "image": "https://vivnt.github.io/lensdemo/fightclub.jpg",
       // Add a link to the video content to serve as the immersive content.
       "contentUrl": "https://vivnt.github.io/lensdemo/fight.mp4",
-      "url": "https://vivnt.github.io/lensdemo/index.html",
+      "url": "https://www.imdb.com/title/tt0137523/",
       "publisher": {
         "@type": "Organization",
         "name": "Google",
@@ -67,33 +27,3 @@
     }
   }
 </script>
-  </head>
-<!-- ## Body -->
-<!-- -->
-<body>
-  <!--
-    Most HTML tags can be used directly in AMP HTML.
-  -->
-  <h1>Fight club</h1>
-  <!--
-    Certain tags, such as the `<img>` tag, are replaced with equivalent or slightly enhanced custom AMP HTML tags (see [HTML Tags in the specification](https://github.com/ampproject/amphtml/blob/master/spec/amp-html-format.md)). You can use the [AMP Validator](/documentation/guides-and-tutorials/learn/validation-workflow/validate_amp) to check
-    if your AMP HTML file is valid AMP HTML. Simply add `#development=1` to an AMP URL. Validation errors will be printed in the Javascript console. You can try it with this website which is built with AMP.
-
-    Check out the [other examples](/documentation/examples/) to learn more about AMP.
-  -->
-  <amp-img src="fightclub.jpg" width="500" height="706" layout="responsive"></amp-img>
-  
-  <section>
-  <h3>Summary</h3>
-  
-  <p>An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.</p>
-  </section>
-  
-  <section>
-  <h3>History</h3>
-  
-  <p>Fight Club is a 1999 film based on the 1996 novel by Chuck Palahniuk. It was directed by David Fincher and stars Brad Pitt, Edward Norton, and Helena Bonham Carter. Norton plays the unnamed narrator, who is discontented with his white-collar job. He forms a "fight club" with soap salesman Tyler Durden (Pitt), and becomes embroiled in a relationship with him and a destitute woman, Marla Singer (Bonham Carter).</p>
-  </section>
-  
-</body>
-</html>
